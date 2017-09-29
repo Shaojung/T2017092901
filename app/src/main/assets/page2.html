@@ -1,1 +1,13 @@
 <h1>This is page2</h1>
+<script>
+    function calc()
+    {
+        var q1 = document.getElementById("q1").val();
+        var q2 = document.getElementById("q2").val();
+        var ans = eval(q1) + eval(q2);
+        var spanans = document.getElementById("ans");
+        spanans.innerHtml = ans;
+    }
+</script>
+<input type="text" id="q1">+<input type="text" id="q2"><input type="button" value="=" onclick="calc()" />
+<span id="ans"></span>
