@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
-
         wv = (WebView) findViewById(R.id.webView);
+        wv.getSettings().setJavaScriptEnabled(true);
         wv.loadUrl("file:///android_asset/index.html");
     }
 
