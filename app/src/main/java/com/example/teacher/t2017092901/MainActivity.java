@@ -11,6 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         wv = (WebView) findViewById(R.id.webView);
-        wv.loadUrl("http://www.google.com.tw");
+        wv.loadUrl("file:///android_asset/index.html");
     }
 }
